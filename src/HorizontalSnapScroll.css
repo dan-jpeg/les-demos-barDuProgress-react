@@ -1,0 +1,26 @@
+.horizontal-container {
+    display: flex;
+    width: 600vw; /* Assuming you have 3 sections */
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* This enables horizontal snapping */
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center; /* This makes sure each section snaps at the start */
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.horizontal-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.horizontal-container {
+    -ms-overflow-style: none;
+}

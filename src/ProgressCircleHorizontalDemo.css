@@ -1,0 +1,31 @@
+.viewport-circle-horizontal {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #fafee5;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.circle-horizontal {
+    position: relative;
+    transform: scaleX(100%);
+    width: 50vw;
+    height: 50vw;
+    margin: 2px;
+    background: black;  /* Circle Color */
+    border-radius: 50%;
+    transition: top 0.05s linear, left 0.05s linear; /* for smooth motion */
+}
+
+.circle-vertical {
+    position: relative;
+    transform: scaleY(100%);
+    width: 50vw;
+    height: 50vw;
+    margin: 2px;
+    background: black;  /* Circle Color */
+    border-radius: 50%;
+    transition: top 0.05s linear, left 0.05s linear; /* for smooth motion */
+}

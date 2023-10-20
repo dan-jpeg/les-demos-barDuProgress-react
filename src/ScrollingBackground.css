@@ -1,0 +1,21 @@
+.scrolling-background {
+    width: 200vw;
+    height: 100vh;
+
+
+    background-image: url('./1020bg.png');
+    background-repeat: repeat;
+    background-size: 100vw auto;
+
+
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 200% 0;  /* Adjust this for horizontal scrolling */
+    }
+}
